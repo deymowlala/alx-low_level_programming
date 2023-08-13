@@ -7,20 +7,19 @@
 
 int main(void)
 {
-	int digit1, digit2;
+	int fig1, fig2;
 
-	for (digit1 = 0; digit1 < 10; digit1++)
+	for (fig1 = 0; fig1 < 9; fig1++)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
+		for (fig2 = 1; fig2 < 10; fig2++)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
-
-			if (digit1 == 9 && digit2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			if (fig1 != fig2)
+			{
+				putchar((fig1 % 10) + '0');
+				putchar((fig2 % 10) + '0');
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 	putchar('\n');
