@@ -3,8 +3,8 @@
 /**
  * _strncat - Function that concatenates two strings
  *@dest: String to be added to
- @src: String to concatenate to dest
- @n: Total number of character to copy to dest from src
+ *@src: String to concatenate to dest
+ *@n: Total number of character to copy to dest from src
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
