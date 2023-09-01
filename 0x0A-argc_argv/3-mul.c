@@ -10,21 +10,16 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc == 3)
-	{
-		int multiply = 1;
-		int i;
+	int num1, num2, mul;
 
-		for (i = 1; i < argc; i++)
-		{
-			multiply = multiply * atoi(argv[i]);
-		}
-		printf("Multiplication result = %d\n", multiply);
-	}
+	if (argc != 3)
+		printf("Error\n");
 	else
 	{
-		printf("error\n");
-		return (1);
+		num1 = atoi(argv[1]);
+		num2 = atoi(argv[2]);
+		mul = num1 * num2;
+		printf("%d\n", mul);
 	}
 	return (0);
 }
