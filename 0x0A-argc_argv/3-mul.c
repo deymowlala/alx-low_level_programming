@@ -22,6 +22,9 @@ int main(int argc, char *argv[])
 		printf("Multiplication result = %d\n", multiply);
 	}
 	else
+	{
 		printf("error\n");
-	return (1);
+		return (1);
+	}
+	return (0);
 }
