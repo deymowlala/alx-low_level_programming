@@ -5,11 +5,10 @@
  * @h: Singly linked list
  * Return: The numer of nodes
  */
-
 size_t print_list(const list_t *h)
 {
 	size_t nodes;
-	
+
 	nodes = 0;
 	while (h != NULL)
 	{
